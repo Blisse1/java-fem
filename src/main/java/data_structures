@@ -1,0 +1,11 @@
+## Data Structures
+Stores and organizes a collections of objects
+
+## Collections Framework
+Unified architecture that provides data structures and algorithms to manipulate them
+  
+## Common collections
+- Set, list, queue and map
+
+## Set
+  Unordered collection of unique objects
