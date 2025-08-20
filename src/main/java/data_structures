@@ -2,10 +2,33 @@
 Stores and organizes a collections of objects
 
 ## Collections Framework
-Unified architecture that provides data structures and algorithms to manipulate them
+Unified architecture that provides data structures and algorithms to manipulate them.
+Collections can only hold objects and not primitive types.
+For example, Integer would be the wrapper class that represents an integer data type
   
 ## Common collections
 - Set, list, queue and map
 
 ## Set
-  Unordered collection of unique objects
+- Unordered collection of unique objects
+
+## List
+- Ordered elements accessible by position and can contain duplicate elements
+
+## Queue (First in, First Out)
+- Collection of ordered elements that are processed in the order in which they're added
+- Allow for duplicate elements
+
+All of the others inherit from the collection interface
+
+## Map
+- Map does not inherit from the collection interface
+- Map holds key-value pairs
+- Maps take objects, the key is an object and the value is an object
+- Map cannot contain duplicate keys, the keys must be unique
+
+## Collection iterators
+Map doesnt have access to Iterator
+
+
+## Enhanced for loops
