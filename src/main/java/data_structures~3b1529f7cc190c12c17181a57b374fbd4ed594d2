@@ -30,5 +30,8 @@ All of the others inherit from the collection interface
 ## Collection iterators
 Map doesnt have access to Iterator
 
-
 ## Enhanced for loops
+
+## Iterating with forEach()
+
+built-in convenience method to iterate over collections
