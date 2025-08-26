@@ -48,9 +48,13 @@ public class CollectionsDemo {
 //        fruits.remove("lemon"); // removes first found
 //        fruits.remove(3);
 
-        for(String fruit : fruits){
-            System.out.println(fruit);
-        }
+//        for(String fruit : fruits){
+//            System.out.println(fruit);
+//        }
+
+        fruits.forEach(fruit -> System.out.println(fruit));
+        // method reference
+        fruits.forEach(System.out::println);
 
 //        System.out.println("index 2 " + fruits.get(2));
 //        System.out.println(fruits.indexOf("grape"));
@@ -86,9 +90,13 @@ public class CollectionsDemo {
         fruitsCalories.remove("lemon");
 
         // Enhanced loop in a Map
-        for(Map.Entry calorieInfo: fruitsCalories.entrySet()){
-            System.out.println(calorieInfo.getKey() + ": " + calorieInfo.getValue());
-        }
+//        for(Map.Entry calorieInfo: fruitsCalories.entrySet()){
+//            System.out.println(calorieInfo.getKey() + ": " + calorieInfo.getValue());
+//        }
+
+//        fruitsCalories.forEach((k, v) -> {
+//            System.out.println(k + ": " + v);
+//        });
 
 //        System.out.println(fruitsCalories);
 //        System.out.println("banana calories: " + fruitsCalories.get("banana"));
