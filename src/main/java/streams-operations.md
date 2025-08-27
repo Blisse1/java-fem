@@ -13,3 +13,5 @@
 Method reference is usual when working with streams
 
 - reduce() Terminal Operation
+
+## Collections
