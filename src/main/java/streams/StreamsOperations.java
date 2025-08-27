@@ -1,6 +1,7 @@
 package streams;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class StreamsOperations {
     static List<String> veggies = List.of(
@@ -16,7 +17,9 @@ public class StreamsOperations {
 //        filterDemo();
 //        mapDemo();
 //        reduceDemo();
-        intReduceDemo();
+//        intReduceDemo();
+//        collectDemo();
+        multiOperationDemo();
     }
 
     public static void anyMatchDemo(){
@@ -49,5 +52,22 @@ public class StreamsOperations {
         List<Integer> number = List.of(2, 3, 4, 5);
         var sum = number.stream().reduce(0, Integer::sum);
         System.out.println(sum);
+    }
+
+    public static void collectDemo(){
+        List veggiesList = veggies.stream()
+                .filter(v -> v.endsWith("s"))
+                .collect(Collectors.toList());
+
+        veggiesList.forEach(System.out::println);
+    }
+
+    public static void multiOperationDemo(){
+        veggies.stream()
+                .sorted()
+                .filter(v -> v.startsWith("c"))
+                .map(String::toUpperCase)
+                .map(v -> v.transform(w -> "yummy " + w))
+                .forEach(System.out::println);
     }
 }
